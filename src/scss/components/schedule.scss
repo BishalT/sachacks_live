@@ -1,5 +1,5 @@
 // schedule page
-.schedule {
+.schedule, .workshops {
   text-align: left;
   background-color: white;
 
@@ -34,29 +34,33 @@ table {
     border: none;
 }
 
-  .btn-sched {
-      font-weight: 900;
-    color: white;
-    background-color: $yellow;
-    font-size: 1.0em;
-    width: 200px;
-    padding: 5px 20px;
-    text-align: center;
-    margin: 0 20px;
-    margin-bottom: 20px;
-    transition: all 0.300s ease-in;
-    height: 75px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.08), 0 6px 20px 0 rgba(0,0,0,0.08);
-    border-radius: 7px;
-    &:focus {
-        outline: 0;
+    .btn-sched, .btn-workshop {
+        margin-left: -3px;
+        padding: 0;
+        border: none;
+        background: none;
+        font-weight: 900;
+        color: $yellow;
+        font-size: 1.0em;
+        width: 100px;
+        text-align: center;
+        margin-bottom: 20px;
+        transition: all 0.300s ease-in;
+        height: 75px;
+        // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.08), 0 6px 20px 0 rgba(0,0,0,0.08);
+        &:focus {
+            outline: 0;
         }
     }
-  .btn-inactive {
-    color: #fbb03a;
-    background: white;
-    cursor: pointer;
-  }
+    .btn-active{
+        box-shadow: 0 8px 2px -2px $yellow;
+    }
+    .btn-inactive {
+        color: $gray;
+        background: white;
+        cursor: pointer;
+        box-shadow: 0 4px 2px -2px $yellow;
+    }
 
   .tb-active {
       tr:nth-child(even) {
@@ -94,14 +98,14 @@ table {
                display: block;
            }
            td:nth-child(1){
-               width: 10%;
+               width: 20%;
            }
            font-size: $detail
        }
        .btn-sched {
-         width: 250px;
+         width: 100px;
          margin-bottom: 0px;
-         font-size: 1.5em;
+         font-size: 1.0em;
          }
        .schedule-header{
            display: flex;

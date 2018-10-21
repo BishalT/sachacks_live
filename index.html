@@ -22,8 +22,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -44,63 +42,146 @@
     <div class="homepage padding-top">
         <img src="images/sachack_3.png" alt="">
         <div class="detail">
-          <h5 class="yellow">Live Dashboard</h5>
+          <h1 class="yellow">Live Dashboard</h1>
         </div>
       </div>
+
       <div class="columns">
           <div class="left-column">
-              <div class="timer-tile padding-top">
-                  <h1>TIMER</h1>
+              <div class="tile timer padding-top">
+                  <h1 class="timer-title">TIMER</h1>
                   <div id="timer-box">
                       <div class="timer-number">
                           <p id="days"> 0 </p>
                       </div>
+                      <span>:</span>
                       <div class="timer-number">
-                          <p id="hours"> 0 </p>
+                          <p id="hours">0</p>
                       </div>
+                      <span>:</span>
                       <div class="timer-number">
                           <p id="min"> 0 </p>
                       </div>
+                      <span>:</span>
                       <div class="timer-number">
                           <p id="sec"> 0 </p>
                       </div>
                   </div>
               </div>
-              <div class="map-tile padding-top">
+              <div class="tile map padding-top">
                   <h1>MAP</h1>
+                  <div class="map">
+                      <img src="images/map_place_holder.png"/>
+                  </div>
               </div>
-              <div class="workshops-tile padding-top">
-                  <h1>WORKSHOPS</h1>
+              <div class="tile workshops padding-top">
+                  <div class="schedule-header">
+                      <h1>WORKSHOPS</h1>
+                      <div class="schedule-buttons">
+                          <button class="btn-1 btn-workshop btn-active btn-click">Nov 17th </button>
+                          <button class="btn-2 btn-workshop btn-inactive btn-click">Nov 18th</button>
+                      </div>
+                  </div>
+                  <table class="tb-1 tb-active">
+                    <tr>
+                      <td class="t-time"> 1-2 PM </td>
+                      <td class="t-event"> Hacker Basics Workshop </td>
+                      <td class="t-desc"> Learn basic fundamental skills of HTML, CSS, and Git to improve design and version control. </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 2-3 PM </td>
+                      <td class="t-event"> Design Thinking Workshop </td>
+                      <td class="t-desc"> Workshop content TBA! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 3-4 PM </td>
+                      <td class="t-event"> Blockchain Workshop </td>
+                      <td class="t-desc"> Workshop content TBA! [Sponsored by XYO] </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 4-5 PM </td>
+                      <td class="t-event"> Game Development Workshop </td>
+                      <td class="t-desc"> Workshop content TBA! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 5-6 PM </td>
+                      <td class="t-event"> Workshop TBA! </td>
+                      <td class="t-desc"> Workshop content TBA! [Sponsored by EA Capital Games] </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 7-8 PM </td>
+                      <td class="t-event"> Smartcar Workshop </td>
+                      <td class="t-desc"> Workshop content TBA! </td>
+                   </tr>
+                    <tr>
+                      <td class="t-time"> 11-12 AM </td>
+                      <td class="t-event"> Google Cloud Platform Workshop </td>
+                      <td class="t-desc"> Learn how to use the GCP API! </td>
+                    </tr>
+                  </table>
+                  <table class="tb-2 tb-inactive">
+                    <tr>
+                      <td class="t-time"> 10-11 AM </td>
+                      <td class="t-event"> Data Analytics Workshop </td>
+                      <td class="t-desc"> More details TBA! [Sponsored by Sacramento Kings] </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 11-12 PM </td>
+                      <td class="t-event"> Redux Workshop </td>
+                      <td class="t-desc"> More details TBA! </td>
+                    </tr>
+                  </table>
               </div>
-              <div class="prizes-awards-tile padding-top">
+              <div class="tile prizes-awards padding-top">
                   <h1>PRIZES & AWARDS</h1>
+                  <div class="lists">
+                      <ul class="left-list">
+                          <li><strong>Best First Hack:</strong> Makey Makey Kits + Possible Gift Card</li>
+                          <li><strong>Best UI/UX:</strong> Sketch Subscription + Schwag </li>
+                          <li><strong>Best Use of Visual Design:</strong> Adobe Stuff</li>
+                          <li><strong>Best Tesla Hack:</strong> Tesla Prize</li>
+                          <li><strong>Best Kings Hack:</strong> Tour of Sacramento Kings Stuff</li>
+                      </ul>
+                      <ul class="right-list">
+                          <li><strong>Best First Hack:</strong> Makey Makey Kits + Possible Gift Card</li>
+                          <li><strong>Best UI/UX:</strong> Sketch Subscription + Schwag </li>
+                          <li><strong>Best Use of Visual Design:</strong> Adobe Stuff</li>
+                          <li><strong>Best Tesla Hack:</strong> Tesla Prize</li>
+                          <li><strong>Best Kings Hack:</strong> Tour of Sacramento Kings Stuff</li>
+                      </ul>
+                  </div>
               </div>
-              <div class="live-feed-1-tile padding-top">
+              <div class="tile live-feed-1 padding-top">
                   <h1>LIVE FEED</h1>
               </div>
           </div>
           <div class="right_column">
-              <div class="schedule-tile padding-top" id="schedule">
+              <div class="tile schedule padding-top" id="schedule">
                   <div class="schedule-header">
                       <h1>SCHEDULE</h1>
                       <div class="schedule-buttons">
-                          <button class="btn-sched btn-active btn-1">Sat, Nov 17th </button>
-                          <button class="btn-sched btn-inactive btn-2">Sun, Nov 18th</button>
+                          <button class="btn-3 btn-sched btn-active btn-click">Nov 17th </button>
+                          <button class="btn-4 btn-sched btn-inactive btn-click">Nov 18th</button>
                       </div>
                   </div>
-                  <table class="tb-active tb-1">
+                  <table class="tb-3 tb-active">
+                      <tr>
+                        <td class="t-time"> 8:30 AM </td>
+                        <td class="t-event"> Check In </td>
+                        <td class="t-desc"> Sign in! Check in at the main entrance of the McClellan Conference Center. </td>
+                      </tr>
                     <tr>
-                      <td class="t-time"> 9 AM </td>
-                      <td class="t-event"> Check In </td>
-                      <td class="t-desc"> Sign in! Check in at the main entrance of the McClellan Conference Center. </td>
-                    </tr>
-                    <tr>
-                      <td class="t-time"> 10 AM </td>
+                      <td class="t-time"> 9:30 AM </td>
                       <td class="t-event"> Opening Ceremony </td>
                       <td class="t-desc"> Hear from a VIP of the Sac Kings! </td>
                     </tr>
                     <tr>
-                      <td class="t-time"> 10:30 AM </td>
+                      <td class="t-time"> 10 AM </td>
+                      <td class="t-event"> Tracks Pre-event </td>
+                      <td class="t-desc"> Learn about the different tracks presented by Sacramento Kings and XYO Blockchain. </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 11 AM </td>
                       <td class="t-event"> Hacking Begins! + Team Mixer </td>
                       <td class="t-desc"> Start building! If you don't yet have a team, attend the mixer to find teammates! </td>
                     </tr>
@@ -110,19 +191,14 @@
                       <td class="t-desc"> Amazing food from local Sac businesses! All details of the meals at the hackathon TBA!</td>
                     </tr>
                     <tr>
-                      <td class="t-time"> 2 PM </td>
-                      <td class="t-event"> Google Cloud Platform Workshop </td>
-                      <td class="t-desc"> Learn how to use the GCP API! </td>
-                    </tr>
-                    <tr>
-                      <td class="t-time"> 4 PM </td>
-                      <td class="t-event"> Workshop TBA</td>
-                      <td class="t-desc"> Workshop content TBA! </td>
-                    </tr>
-                    <tr>
                       <td class="t-time"> 6 PM </td>
                       <td class="t-event"> Dinner </td>
                       <td class="t-desc"> Time to eat! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 8 PM </td>
+                      <td class="t-event"> Cupstacking </td>
+                      <td class="t-desc"> Take a break and participate in a fun cup stacking competition! </td>
                     </tr>
                     <tr>
                       <td class="t-time"> 10 PM </td>
@@ -130,7 +206,8 @@
                       <td class="t-desc"> Let's watch this once-a-year meteor shower together while we break! </td>
                     </tr>
                   </table>
-                  <table class="tb-inactive tb-2">
+
+                  <table class="tb-4 tb-inactive">
                     <tr>
                       <td class="t-time"> 12 AM </td>
                       <td class="t-event"> Midnight Snack </td>
@@ -142,39 +219,14 @@
                       <td class="t-desc"> Need we say more?  </td>
                     </tr>
                     <tr>
-                      <td class="t-time"> 4 AM </td>
-                      <td class="t-event"> Cup Stacking </td>
-                      <td class="t-desc"> Still alive? Let's do some classic cup stacking!</td>
-                    </tr>
-                    <tr>
                       <td class="t-time"> 8 AM </td>
                       <td class="t-event"> Breakfast </td>
                       <td class="t-desc"> Donuts and coffee. Yay. </td>
                     </tr>
                     <tr>
-                      <td class="t-time"> 10 AM </td>
-                      <td class="t-event"> Workshop </td>
-                      <td class="t-desc"> More details TBA! </td>
-                    </tr>
-                    <tr>
                       <td class="t-time"> 12 PM </td>
                       <td class="t-event"> Lunch </td>
                       <td class="t-desc"> TBA Again :) </td>
-                    </tr>
-                    <tr>
-                      <td class="t-time"> 2 PM </td>
-                      <td class="t-event"> Workshop </td>
-                      <td class="t-desc"> TBA :) </td>
-                    </tr>
-                    <tr>
-                      <td class="t-time"> 3 PM </td>
-                      <td class="t-event"> Workshop </td>
-                      <td class="t-desc"> :) </td>
-                    </tr>
-                     <tr>
-                      <td class="t-time"> 4 PM </td>
-                      <td class="t-event"> Hacking Finished! </td>
-                      <td class="t-desc"> Congratulations!! You've survived!! </td>
                     </tr>
                      <tr>
                       <td class="t-time"> 4:30 PM </td>
@@ -188,13 +240,33 @@
                     </tr>
                   </table>
               </div>
-              <div class="hardware-api-tile padding-top">
+              <div class="tile hardware-api padding-top">
                   <h1>HARDWARE & API</h1>
+                  <div class="lists">
+                      <ul class="left-list">
+                          <li>What</li>
+                          <li>do</li>
+                          <li>you</li>
+                          <li>call</li>
+                          <li>a</li>
+                      </ul>
+                      <ul class="right-list">
+                          <li>cow</li>
+                          <li>military</li>
+                          <li>?</li>
+                          <li>A</li>
+                          <li>Moo-litary</li>
+                      </ul>
+                  </div>
               </div>
-              <div class="contact-mentor-tile padding-top">
+              <div class="tile contact-mentor padding-top">
                   <h1>CONTACT A MENTOR</h1>
+                  <div class="mentor-buttons">
+                      <button class="btn-mentor">Technical Question</button>
+                      <button class="btn-mentor">Other Inquiries</button>
+                  </div>
               </div>
-              <div class="live-feed-2-tile padding-top">
+              <div class="tile live-feed-2 padding-top">
                   <h1>LIVE FEED</h1>
               </div>
           </div>

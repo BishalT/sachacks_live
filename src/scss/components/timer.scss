@@ -1,46 +1,26 @@
 
 // about page
-.about{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-  h1{
-    color: $navy;
-    text-align: left;
-    font-size: $titleMobile;
-    margin-bottom: 10px;
-    font-weight: $titleWeight;
-    letter-spacing: -1.7px;
-  }
-  .yellow {
-   color: $yellow;
-   font-weight: 900;
-  }
-
-
-
-  .detail {
-    p{
-      color: $gray;
-      font-size: $mobileDetail;
-      line-height: $detailHeight;
-      text-align: left;
-      font-weight: $detailWeight;
+.timer{
+    	/*border: 2px solid transparent;*/
+    .timer-title {
+    	font-size: 30px;
+    	padding: 2px 5px 2px 5px;
     }
-  }
-  @media screen and (min-width:1023px) {
-      flex-direction: row;
-      text-align: center;
-      h1{
-          text-align: left;
-          max-width: 300px;
-          font-size: $title;
-      }
-      p{
-          margin: 10px 0px 30px 100px;
-          max-width: 1000px;
-          font-size: $detail;
-          letter-spacing: $spacingDesktop;
-      }
-  }
+    #timer-box{
+        display:flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .timer-number, span {
+        font-family: 'Avenir-Bold';
+        font-size: 4.0em;
+    	text-align: center;
+    	color: $navy;
+    	display: inline-block;
+    	padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    span, #days, #sec {
+        font-family: 'Avenir-Regular'!important;
+    }
 }
