@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image:url('./images/galaxy_rawtexture.jpeg')">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="SacHacks Live | Sacramento's First Major Intercollegiate Hackathon">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://sachacks.io/live" />
+  <meta property="og:image" content="http://sachacks.io/images/sachack_3.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="172" />
+  <meta property="og:description" content="SacHacks is Sacramento's first upcoming intercollegiate hackathon, characterized by remarkable rounds of intense coding and brainstorming! Come together for 30 hours with the brightest developers and designers to create something amazing." />
+  <meta name="description" content="SacHacks | Sacramento's first intercollegiate Hackathon" />
+  <meta name="keywords" content="hackathon, Sacramento, California, hackathon, technology, startups, innovation, hacks" />
+  <meta name="author" content="SacHacks" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta http-equiv="cache-control" content="public" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="shortcut icon" href="images/rocket-color.png" type="image/x-icon">
+  <link rel="icon" href="images/rocket-color.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="dist/index.css">
+  <title>SacHacks</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-title">
+        <a href="/">
+          <img src="images/sachack_3.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="homepage padding-top">
+        <img src="images/sachack_3.png" alt="">
+        <div class="detail">
+          <h5 class="yellow">Live Dashboard</h5>
+        </div>
+      </div>
+      <div class="columns">
+          <div class="left-column">
+              <div class="timer-tile padding-top">
+                  <h1>TIMER</h1>
+                  <div id="timer-box">
+                      <div class="timer-number">
+                          <p id="days"> 0 </p>
+                      </div>
+                      <div class="timer-number">
+                          <p id="hours"> 0 </p>
+                      </div>
+                      <div class="timer-number">
+                          <p id="min"> 0 </p>
+                      </div>
+                      <div class="timer-number">
+                          <p id="sec"> 0 </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="map-tile padding-top">
+                  <h1>MAP</h1>
+              </div>
+              <div class="workshops-tile padding-top">
+                  <h1>WORKSHOPS</h1>
+              </div>
+              <div class="prizes-awards-tile padding-top">
+                  <h1>PRIZES & AWARDS</h1>
+              </div>
+              <div class="live-feed-1-tile padding-top">
+                  <h1>LIVE FEED</h1>
+              </div>
+          </div>
+          <div class="right_column">
+              <div class="schedule-tile padding-top" id="schedule">
+                  <div class="schedule-header">
+                      <h1>SCHEDULE</h1>
+                      <div class="schedule-buttons">
+                          <button class="btn-sched btn-active btn-1">Sat, Nov 17th </button>
+                          <button class="btn-sched btn-inactive btn-2">Sun, Nov 18th</button>
+                      </div>
+                  </div>
+                  <table class="tb-active tb-1">
+                    <tr>
+                      <td class="t-time"> 9 AM </td>
+                      <td class="t-event"> Check In </td>
+                      <td class="t-desc"> Sign in! Check in at the main entrance of the McClellan Conference Center. </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 10 AM </td>
+                      <td class="t-event"> Opening Ceremony </td>
+                      <td class="t-desc"> Hear from a VIP of the Sac Kings! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 10:30 AM </td>
+                      <td class="t-event"> Hacking Begins! + Team Mixer </td>
+                      <td class="t-desc"> Start building! If you don't yet have a team, attend the mixer to find teammates! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 12 PM </td>
+                      <td class="t-event"> Lunch </td>
+                      <td class="t-desc"> Amazing food from local Sac businesses! All details of the meals at the hackathon TBA!</td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 2 PM </td>
+                      <td class="t-event"> Google Cloud Platform Workshop </td>
+                      <td class="t-desc"> Learn how to use the GCP API! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 4 PM </td>
+                      <td class="t-event"> Workshop TBA</td>
+                      <td class="t-desc"> Workshop content TBA! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 6 PM </td>
+                      <td class="t-event"> Dinner </td>
+                      <td class="t-desc"> Time to eat! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 10 PM </td>
+                      <td class="t-event"> Leonid Meteor Shower Break! </td>
+                      <td class="t-desc"> Let's watch this once-a-year meteor shower together while we break! </td>
+                    </tr>
+                  </table>
+                  <table class="tb-inactive tb-2">
+                    <tr>
+                      <td class="t-time"> 12 AM </td>
+                      <td class="t-event"> Midnight Snack </td>
+                      <td class="t-desc"> You've probably had too much Red Bull. We'll have more Red Bull for you :) . Also snacks are stocked! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 2 AM </td>
+                      <td class="t-event"> Boba Break </td>
+                      <td class="t-desc"> Need we say more?  </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 4 AM </td>
+                      <td class="t-event"> Cup Stacking </td>
+                      <td class="t-desc"> Still alive? Let's do some classic cup stacking!</td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 8 AM </td>
+                      <td class="t-event"> Breakfast </td>
+                      <td class="t-desc"> Donuts and coffee. Yay. </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 10 AM </td>
+                      <td class="t-event"> Workshop </td>
+                      <td class="t-desc"> More details TBA! </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 12 PM </td>
+                      <td class="t-event"> Lunch </td>
+                      <td class="t-desc"> TBA Again :) </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 2 PM </td>
+                      <td class="t-event"> Workshop </td>
+                      <td class="t-desc"> TBA :) </td>
+                    </tr>
+                    <tr>
+                      <td class="t-time"> 3 PM </td>
+                      <td class="t-event"> Workshop </td>
+                      <td class="t-desc"> :) </td>
+                    </tr>
+                     <tr>
+                      <td class="t-time"> 4 PM </td>
+                      <td class="t-event"> Hacking Finished! </td>
+                      <td class="t-desc"> Congratulations!! You've survived!! </td>
+                    </tr>
+                     <tr>
+                      <td class="t-time"> 4:30 PM </td>
+                      <td class="t-event"> Demos and Judging </td>
+                      <td class="t-desc"> Show off the cool projects you've hacked!! </td>
+                    </tr>
+                     <tr>
+                      <td class="t-time"> 5:00 (to 5:45) PM </td>
+                      <td class="t-event"> Closing Ceremony </td>
+                      <td class="t-desc"> Let's close and conquer!</td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="hardware-api-tile padding-top">
+                  <h1>HARDWARE & API</h1>
+              </div>
+              <div class="contact-mentor-tile padding-top">
+                  <h1>CONTACT A MENTOR</h1>
+              </div>
+              <div class="live-feed-2-tile padding-top">
+                  <h1>LIVE FEED</h1>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="./dist/bundle.js"></script>
+
+</body>
+</html>
