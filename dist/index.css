@@ -25,7 +25,7 @@
 .timer {
   /*border: 2px solid transparent;*/ }
   .timer .timer-title {
-    font-size: 30px;
+    font-size: 2px;
     padding: 2px 5px 2px 5px; }
   .timer #timer-box {
     display: flex;
@@ -33,7 +33,7 @@
     justify-content: center; }
   .timer .timer-number, .timer span {
     font-family: 'Avenir-Bold';
-    font-size: 4.0em;
+    font-size: 3.0em;
     text-align: center;
     color: #002561;
     display: inline-block;
@@ -106,7 +106,8 @@
     font-weight: 900;
     color: #fbb03a;
     font-size: 1.0em;
-    width: 100px;
+    width: 100%;
+    height: 45%;
     text-align: center;
     margin-bottom: 20px;
     transition: all 0.300s ease-in;
@@ -148,7 +149,8 @@
       .schedule .tb-active td:nth-child(1), .workshops .tb-active td:nth-child(1) {
         width: 20%; }
     .schedule .btn-sched, .workshops .btn-sched {
-      width: 100px;
+      width: 100%;
+      height: 45%;
       margin-bottom: 0px;
       font-size: 1.0em; }
     .schedule .schedule-header, .workshops .schedule-header {

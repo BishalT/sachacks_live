@@ -42,7 +42,8 @@ table {
         font-weight: 900;
         color: $yellow;
         font-size: 1.0em;
-        width: 100px;
+        width: 100%; //100px;
+        height: 45%;
         text-align: center;
         margin-bottom: 20px;
         transition: all 0.300s ease-in;
@@ -103,7 +104,8 @@ table {
            font-size: $detail
        }
        .btn-sched {
-         width: 100px;
+         width: 100%; //100px;
+         height: 45%;
          margin-bottom: 0px;
          font-size: 1.0em;
          }
