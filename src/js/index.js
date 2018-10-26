@@ -73,3 +73,11 @@ $(document).ready(function() {
     var hackEnd = '11/18/2018 04:00:00 PM';
     timer(hackEnd);
 });
+
+twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "TwitterDev"
+  },
+  document.getElementById("container")
+);
