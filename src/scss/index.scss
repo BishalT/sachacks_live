@@ -54,7 +54,6 @@ $hoverblue: #0c6298;
 }
 
 @import './components/font.scss';
-@import './components/homepage.scss';
 @import './components/timer.scss';
 @import './components/map.scss';
 @import './components/workshops.scss';
@@ -119,6 +118,10 @@ h1{
 
 .padding-top {
   padding: 40px 40px 40px 40px;
+  @media screen and (max-width: 767px){
+      padding-left: 10px;
+      padding-right: 10px;
+  }
 }
 
 // homepage
@@ -130,14 +133,13 @@ h1{
       padding-bottom: 25px;
   }
   img{
-
     max-width: 100%;
     width: 75%;
     @media screen and (min-width:768px) {
     width: 23vw;
         }
     @media screen and (min-width: 1023px) {
-        width: 23vw;
+        width: 40vw;
     }
 }
 
@@ -160,7 +162,7 @@ h1{
     justify-content: center;
     width: 100%;
     .left-column, .right_column {
-        width: 75%;
+        width: 90%;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -184,7 +186,12 @@ h1{
     h1 {
         font-family: 'Avenir-Bold';
         font-weight: 500!important;
-        font-size: $header!important;
+        font-size: $titleMobile!important;
+        text-align: center;
+        @media screen and (min-width: 768px){
+            font-size: 2.0em!important;
+            text-align: left;
+        }
         color: $navy;
         padding-bottom: 25px;
     }

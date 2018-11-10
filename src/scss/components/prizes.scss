@@ -1,8 +1,12 @@
 .lists {
     display: flex;
     justify-content: center;
+    ul{
+        padding-left: 20px;
+    }
     li {
         font-size: 1.15em;
         padding-bottom: 10px;
+        font-family: 'Avenir-Bold'!important;
     }
 }

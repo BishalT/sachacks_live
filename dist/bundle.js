@@ -141,11 +141,6 @@ $(document).ready(function () {
     timer(hackEnd);
 });
 
-twttr.widgets.createTimeline({
-    sourceType: "profile",
-    screenName: "TwitterDev"
-}, document.getElementById("container"));
-
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {

@@ -2,7 +2,6 @@
 .schedule, .workshops {
   text-align: left;
   background-color: white;
-
   td {
     color: $gray;
   }
@@ -35,7 +34,7 @@ table {
 }
 
     .btn-sched, .btn-workshop {
-        margin-left: -3px;
+        margin-left: 10px;
         padding: 0;
         border: none;
         background: none;

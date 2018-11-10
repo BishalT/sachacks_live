@@ -1,5 +1,8 @@
 // main header
 .live-feed-1{
+    @media screen and (max-width: 1024px){
+        display: none;
+    }
     .live-feed-items{
         .twitter-logo{
             height: 50%;
