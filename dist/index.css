@@ -22,32 +22,6 @@
   font-weight: normal;
   font-style: normal; }
 
-.header {
-  margin: 0px 2%;
-  max-width: 800px;
-  position: absolute;
-  display: flex;
-  font-weight: 500; }
-  .header h5 {
-    color: #fbb03a !important; }
-  .header .logo {
-    display: inline-block; }
-    .header .logo img {
-      padding-left: 3vh;
-      max-height: 100px; }
-      @media screen and (min-width: 1024px) {
-        .header .logo img {
-          max-height: 180px; } }
-  .header .header-title {
-    width: 200px;
-    display: none;
-    height: 200px;
-    line-height: 200px;
-    text-align: center; }
-    .header .header-title img {
-      max-width: 100%;
-      margin: 40px; }
-
 .timer {
   /*border: 2px solid transparent;*/ }
   .timer .timer-title {
@@ -59,12 +33,15 @@
     justify-content: center; }
   .timer .timer-number, .timer span {
     font-family: 'Avenir-Bold';
-    font-size: 3.0em;
     text-align: center;
     color: #002561;
+    font-size: 2.5em;
     display: inline-block;
     padding-top: 15px;
     padding-bottom: 15px; }
+    @media screen and (min-width: 768px) {
+      .timer .timer-number, .timer span {
+        font-size: 3.0em; } }
   .timer span, .timer #days, .timer #sec {
     font-family: "Avenir-Regular" !important; }
 
@@ -125,7 +102,7 @@
   .schedule table, .workshops table {
     border: none; }
   .schedule .btn-sched, .schedule .btn-workshop, .workshops .btn-sched, .workshops .btn-workshop {
-    margin-left: -3px;
+    margin-left: 10px;
     padding: 0;
     border: none;
     background: none;
@@ -189,20 +166,24 @@
 .lists {
   display: flex;
   justify-content: center; }
+  .lists ul {
+    padding-left: 20px; }
   .lists li {
     font-size: 1.15em;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    font-family: "Avenir-Bold" !important; }
 
 .contact-mentor .mentor-buttons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%; }
   .contact-mentor .mentor-buttons .btn-mentor {
     font-weight: 900;
     color: white;
     background-color: #002561;
     font-size: 1.0em;
-    width: 35%;
+    width: 50%;
     padding: 5px 20px;
     text-align: center;
     margin: 0 20px;
@@ -213,6 +194,10 @@
     border-radius: 7px; }
     .contact-mentor .mentor-buttons .btn-mentor:focus {
       outline: 0; }
+
+@media screen and (max-width: 1024px) {
+  .live-feed-1 {
+    display: none; } }
 
 .live-feed-1 .live-feed-items {
   display: flex;
@@ -266,6 +251,10 @@ h1 {
 
 .padding-top {
   padding: 40px 40px 40px 40px; }
+  @media screen and (max-width: 767px) {
+    .padding-top {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .homepage {
   text-align: center;
@@ -282,7 +271,7 @@ h1 {
         width: 23vw; } }
     @media screen and (min-width: 1023px) {
       .homepage img {
-        width: 23vw; } }
+        width: 40vw; } }
   .homepage .detail {
     max-width: 800px;
     padding-top: 20px;
@@ -299,7 +288,7 @@ h1 {
   justify-content: center;
   width: 100%; }
   .columns .left-column, .columns .right_column {
-    width: 75%;
+    width: 90%;
     padding-left: 10px;
     padding-right: 10px; }
   @media screen and (max-width: 1024px) {
@@ -320,6 +309,11 @@ h1 {
   .tile h1 {
     font-family: 'Avenir-Bold';
     font-weight: 500 !important;
-    font-size: 2.4em !important;
+    font-size: 2em !important;
+    text-align: center;
     color: #002561;
     padding-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      .tile h1 {
+        font-size: 2em !important;
+        text-align: left; } }
